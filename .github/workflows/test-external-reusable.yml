@@ -6,6 +6,6 @@ on:
 
 jobs:
   call-external:
-    uses: tk3fftk/reusable-workflow-test/.github/workflows/greet.yml@v1
+    uses: tk3fftk/reusable-workflow-test/.github/workflows/greet.yml@0e0e6d0b9a7a559f4899fa30f576577733b581a9 # v1
     with:
       name: "SHA pinning test"
