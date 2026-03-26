@@ -1,0 +1,10 @@
+name: Test Unpinned Reusable Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable-unpinned.yml
+    permissions: {}
