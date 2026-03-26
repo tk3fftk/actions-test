@@ -1,0 +1,11 @@
+name: "Unpinned Composite Action"
+description: "SHA pinning検証用: 内部にpinされていないaction (checkout@v6) を含むcomposite action"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 1
+    - run: echo "composite action内のステップが実行されました"
+      shell: bash

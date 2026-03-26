@@ -1,0 +1,13 @@
+name: Test Unpinned Composite Action
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-composite:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+      - uses: ./.github/actions/unpinned-composite
