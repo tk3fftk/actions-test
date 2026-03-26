@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {}
     steps:
+      - uses: actions/checkout@v6
       - name: ステップA
         run: |
           echo "このコマンドは実行される"
           exit 0
           echo "このコマンドは実行されない（同じステップ内だから）"
-
       - name: ステップB
         run: echo "ステップAが成功したので、このステップは通常通り実行される"
