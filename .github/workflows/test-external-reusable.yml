@@ -1,0 +1,11 @@
+name: Test External Reusable Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  call-external:
+    uses: tk3fftk/reusable-workflow-test/.github/workflows/greet.yml@v1
+    with:
+      name: "SHA pinning test"
