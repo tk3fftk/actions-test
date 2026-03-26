@@ -1,0 +1,12 @@
+name: Test External Unpinned Composite Action
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-external-composite:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: tk3fftk/unpinned-composite-action@v1
